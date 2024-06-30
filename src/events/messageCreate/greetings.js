@@ -62,10 +62,10 @@ module.exports = (client, message) => {
         return;
     }
 
-    // if (message.content.toLowerCase().includes('sam') && message.content.toLowerCase().includes("?")) {
-    //     message.reply("AAAAAHHH! TOO MANY QUESTIONS");
-    //     return;
-    // }
+    if (message.content.toLowerCase().includes('sam') && message.content.toLowerCase().includes("?")) {
+        message.reply("AAAAAHHH! TOO MANY QUESTIONS");
+        return;
+    }
 
     if (message.content.toLowerCase().includes('sam') && message.content.toLowerCase().includes("do it with")) {
         message.reply(`I choose you, <@${message.author.id}>!`);
