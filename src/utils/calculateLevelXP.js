@@ -1,0 +1,1 @@
+module.exports = (level) => Math.floor((100/(1 + Math.E**(-0.1*(level - 20))))**2) || 1;
