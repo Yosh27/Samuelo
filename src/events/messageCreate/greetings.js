@@ -7,12 +7,7 @@ require('dotenv');
  * @returns 
  */
 
-module.exports = (client, message) => {    
-    if (message.content === 'Long live the Regime!' && message.member.roles.cache.has(process.env.GOD_ROLE_ID)) {
-        message.reply('Long live the regime!');
-        return;
-    }
-    
+module.exports = (client, message) => {        
     if (message.author.bot) return;
     
     
